@@ -1,8 +1,11 @@
 {
+  "homepage": "https://jameelemadmatar.github.io/",
   "name": "cart-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -10,6 +13,7 @@
   "dependencies": {
     "bootstrap": "^5.2.2",
     "core-js": "^3.8.3",
+    "gh-pages": "^5.0.0",
     "vue": "^3.2.45",
     "vue-axios": "^3.5.2",
     "vue-router": "^4.1.6",
